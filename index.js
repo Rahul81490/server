@@ -27,8 +27,7 @@ const getAllTours = (req, res,next) => {
     })
 } catch(err){
     next(err)
-}
-}
+}}
 
 const gettourById =  (req, res,next) => {
     try{
