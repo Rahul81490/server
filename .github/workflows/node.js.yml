@@ -47,3 +47,4 @@ jobs:
           docker stop xhip-desk-app || true
           docker rm xhip-desk-app || true
           docker run -d -p 3000:3000 --name xhip-desk-app ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}:${{ github.sha }}
+
