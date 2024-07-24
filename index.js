@@ -122,6 +122,7 @@ app.patch('/api/v1/tours/:id', updatetour)
 app.delete('/api/v1/tours/:id', deleteTour) */
 
 app.route('/api/v1/tours').get(getAllTours).post(craeteNewtour)
+app.route('/api/v1/hello').get(getAllTours).post(craeteNewtour)
 app.route('/api/v1/tours/:id').get(gettourById).patch(updatetour).delete(deleteTour)
 
 app.use((err,req, res, next) => {
