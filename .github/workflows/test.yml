@@ -1,9 +1,8 @@
-name: Build, Push to ECR, Deploy to EC2
+name: Build, Push to ECR, Deploy to EC2 Test
 
 on:
   push:
-    branches:
-      - test
+    branches: [test]
 
 jobs:
   build-and-deploy:
